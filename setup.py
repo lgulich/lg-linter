@@ -1,4 +1,9 @@
+import os
+import pathlib
 import setuptools
+
+HOME_PATH = pathlib.Path.home
+CONFIG_PATH = pathlib.Path('lib/lg_linter/config')
 
 with open("README.md", "r") as fh:
     LONG_DESCRIPTION = fh.read()
@@ -23,6 +28,9 @@ setuptools.setup(
     package_dir={'': 'lib'},
     packages=setuptools.find_packages('lib'),
     include_package_data=True,
+    data_files=[
+            HOME_PATH, [CONFIG_PATH / '.clang-format', CONFIG_PATH / 'pylint.rc', CONFIG_PATH / 'cpplint.py']
+        ],
     scripts=[
         'lib/lg_linter/scripts/init-lg-linter',
         'lib/lg_linter/scripts/deinit-lg-linter'
