@@ -9,7 +9,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="lg-linter",
-    version="0.1.0",
+    version="v0.1.1-alpha",
     author="Lionel Gulich",
     author_email="lgulich@ethz.ch",
     url="https://github.com/lgulich/lg-linter",
@@ -17,7 +17,7 @@ setuptools.setup(
     long_description=LONG_DESCRIPTION,
     long_description_content_type="text/markdown",
     download_url=
-    "https://github.com/lgulich/lg-linter/archive/v0.1.0-alpha.tar.gz",
+    "https://github.com/lgulich/lg-linter/archive/v0.1.1-alpha.tar.gz",
     install_requires=[
         'gitpython',
         'pylint',
@@ -36,7 +36,7 @@ setuptools.setup(
     include_package_data=True,
     data_files=[('/' + HOME_PATH, [
         os.path.join(CONFIG_PATH, '.clang-format'),
-        os.path.join(CONFIG_PATH, 'pylint.rc'),
+        os.path.join(CONFIG_PATH, '.pylintrc'),
         os.path.join(CONFIG_PATH, 'cpplint.py')
     ])],
     scripts=[

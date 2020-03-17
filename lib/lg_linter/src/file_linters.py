@@ -5,7 +5,7 @@ import subprocess
 
 def lint_cpp_file(file_path):
     os.system(f'clang-format -i {file_path}')
-    completed_process = subprocess.run(['cppcheck', file_path],
+    completed_process = subprocess.run(['cpplint', file_path],
                                        stdout=subprocess.PIPE)
 
     if completed_process.returncode is 0:
