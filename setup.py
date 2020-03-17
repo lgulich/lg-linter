@@ -17,6 +17,12 @@ setuptools.setup(
     long_description=LONG_DESCRIPTION,
     long_description_content_type="text/markdown",
     download_url="",
+    install_requires=[
+        'gitpython',
+        'pylint',
+        'yapf',
+        'cpplint',
+    ],
     classifiers=[
         "Programming Language :: Python :: 3 :: Only",
         "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
