@@ -4,7 +4,7 @@ Make sure you have `clang-format` and `shellcheck` installed. If not you can ins
 sudo apt update
 sudo apt install -y clang-format shellcheck
 ```
-Install with
+Next install the linter with
 ```sh
 pip3 install lg-linter
 ```
