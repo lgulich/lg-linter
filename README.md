@@ -1,4 +1,9 @@
 ## Installation
+Make sure you have `clang-format` and `shellcheck` installed. If not you can install them with
+```sh
+sudo apt update
+sudo apt install -y clang-format shellcheck
+```
 Install with
 ```sh
 pip3 install lg-linter
