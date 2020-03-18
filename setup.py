@@ -16,7 +16,7 @@ setuptools.setup(
     description="A pre commit linter for cpp, python and sh.",
     long_description=LONG_DESCRIPTION,
     long_description_content_type="text/markdown",
-    download_url="https://github.com/lgulich/lg-linter/archive/v0.1.2.tar.gz",
+    download_url="https://github.com/lgulich/lg-linter/archive/v0.1.2b.tar.gz",
     install_requires=[
         'gitpython',
         'pylint',
