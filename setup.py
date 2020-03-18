@@ -13,11 +13,10 @@ setuptools.setup(
     author="Lionel Gulich",
     author_email="lgulich@ethz.ch",
     url="https://github.com/lgulich/lg-linter",
-    description="A pre commit linter for cpp, python and sh",
+    description="A pre commit linter for cpp, python and sh.",
     long_description=LONG_DESCRIPTION,
     long_description_content_type="text/markdown",
-    download_url=
-    "https://github.com/lgulich/lg-linter/archive/v0.1.1.tar.gz",
+    download_url="https://github.com/lgulich/lg-linter/archive/v0.1.1.tar.gz",
     install_requires=[
         'gitpython',
         'pylint',
@@ -37,11 +36,12 @@ setuptools.setup(
     data_files=[('/' + HOME_PATH, [
         os.path.join(CONFIG_PATH, '.clang-format'),
         os.path.join(CONFIG_PATH, '.pylintrc'),
-        os.path.join(CONFIG_PATH, 'cpplint.py')
+        os.path.join(CONFIG_PATH, 'CPPLINT.cfg')
     ])],
     scripts=[
-        'lib/lg_linter/scripts/init-lg-linter',
-        'lib/lg_linter/scripts/deinit-lg-linter'
+        'lib/lg_linter/scripts/init_lg_linter',
+        'lib/lg_linter/scripts/deinit_lg_linter',
+        'lib/lg_linter/scripts/lint_repo'
     ],
     python_requires=">=3.6",
 )
