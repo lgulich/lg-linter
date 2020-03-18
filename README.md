@@ -28,4 +28,4 @@ git commit --no-verify
 Use with care, with great power comes great responsibility!
 
 ## Contact
-For feature requests or bugs please drop an issue at https://github.com/lgulich/lg-linter.
+For feature requests or bug reports please drop an issue at https://github.com/lgulich/lg-linter.
