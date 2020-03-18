@@ -9,7 +9,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="lg-linter",
-    version="v0.1.2",
+    version="v0.1.3",
     author="Lionel Gulich",
     author_email="lgulich@ethz.ch",
     url="https://github.com/lgulich/lg-linter",
@@ -35,8 +35,9 @@ setuptools.setup(
     include_package_data=True,
     data_files=[('/' + HOME_PATH, [
         os.path.join(CONFIG_PATH, '.clang-format'),
+        os.path.join(CONFIG_PATH, 'CPPLINT.cfg'),
         os.path.join(CONFIG_PATH, '.pylintrc'),
-        os.path.join(CONFIG_PATH, 'CPPLINT.cfg')
+        os.path.join(CONFIG_PATH, '.style.yapf')
     ])],
     scripts=[
         'lib/lg_linter/scripts/init_lg_linter',
