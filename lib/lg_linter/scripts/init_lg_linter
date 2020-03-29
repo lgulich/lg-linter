@@ -5,7 +5,7 @@ REPO_DIR="$(git rev-parse --show-toplevel)"
 touch "$REPO_DIR"/.git/hooks/pre-commit
 chmod +x "$REPO_DIR"/.git/hooks/pre-commit
 
-PRE_COMMIT_SCRIPT='
+PRE_COMMIT_SCRIPT="
 #!/usr/bin/env python3
 
 import os
@@ -24,6 +24,6 @@ def main():
 
 if __name__ == '__main__':
     exit(main())
-'
+"
 
-echo "$PRE_COMMIT_SCRIPT" >> "$REPO_DIR"/.git/hooks/pre-commit
+echo "$PRE_COMMIT_SCRIPT" > "$REPO_DIR"/.git/hooks/pre-commit
