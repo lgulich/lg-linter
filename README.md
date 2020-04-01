@@ -1,3 +1,8 @@
+# LG-Linter
+![Upload Python Package](https://github.com/lgulich/lg-linter/workflows/Upload%20Python%20Package/badge.svg?branch=master)
+
+A simple pre-commit linter for bash, python and c++.
+
 ## Installation
 Make sure you have `clang-format` and `shellcheck` installed. If not you can install them with
 ```sh
