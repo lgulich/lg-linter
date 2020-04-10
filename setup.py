@@ -9,14 +9,14 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="lg-linter",
-    version="v0.1.6",
+    version="v0.1.7",
     author="Lionel Gulich",
     author_email="lgulich@ethz.ch",
     url="https://github.com/lgulich/lg-linter",
     description="A pre commit linter for cpp, python and sh.",
     long_description=LONG_DESCRIPTION,
     long_description_content_type="text/markdown",
-    download_url="https://github.com/lgulich/lg-linter/archive/v0.1.6.tar.gz",
+    download_url="https://github.com/lgulich/lg-linter/archive/v0.1.7.tar.gz",
     install_requires=[
         'gitpython',
         'pylint',
