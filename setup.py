@@ -9,7 +9,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="lg-linter",
-    version="v0.1.8",
+    version="v0.1.9",
     author="Lionel Gulich",
     author_email="lgulich@ethz.ch",
     url="https://github.com/lgulich/lg-linter",
@@ -21,7 +21,7 @@ setuptools.setup(
         'gitpython',
         'pylint',
         'yapf',
-        'cpplint',
+        'lg-cpplint',
     ],
     classifiers=[
         "Programming Language :: Python :: 3 :: Only",
