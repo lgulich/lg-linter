@@ -4,10 +4,10 @@
 A simple pre-commit linter for bash, python and c++.
 
 ## Installation
-Make sure you have `clang-format` and `shellcheck` installed. If not you can install them with
+Make sure you have `pip3`, `clang-format` and `shellcheck` installed. If not you can install them with
 ```sh
 sudo apt update
-sudo apt install -y clang-format shellcheck
+sudo apt install -y python3-pip clang-format shellcheck
 ```
 Next install the linter with
 ```sh
