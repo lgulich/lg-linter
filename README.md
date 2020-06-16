@@ -1,7 +1,10 @@
 # LG-Linter
 ![Upload Python Package](https://github.com/lgulich/lg-linter/workflows/Upload%20Python%20Package/badge.svg?branch=master)
 
-A simple pre-commit linter for bash, python and c++.
+LG-Linter is a simple linter and formatter for bash, python and c++. Additionally we provide git hooks such that the linter can automatically be run before every commit.
+
+Tested on 
+* Ubuntu 18.04
 
 ## Installation
 Make sure you have `pip3`, `clang-format` and `shellcheck` installed. If not you can install them with
