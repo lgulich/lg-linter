@@ -8,18 +8,22 @@ chmod +x "$REPO_DIR"/.git/hooks/pre-commit
 PRE_COMMIT_SCRIPT="#!/usr/bin/env python3
 
 import os
-import pathlib
+from pathlib import Path
 
-from lg_linter.src.lg_linter import lint
+from lg_linter.src.lg_linter import LinterConfig, lint
 
 
 def main():
-    repo_path = pathlib.Path(__file__).parent.parent.parent.resolve()
-    if lint(repo_path):
-      return 0
-    else:
-      return 1
+    repo_path = Path(__file__).parent.parent.parent.resolve()
 
+    config = LinterConfig(repo_path, False)
+
+    linted_successfully = lint(config)
+
+    if not linted_successfully:
+        return 1
+
+    return 0
 
 if __name__ == '__main__':
     exit(main())
