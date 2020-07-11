@@ -12,6 +12,14 @@ Make sure you have `pip3`, `clang-format` and `shellcheck` installed. If not you
 sudo apt update
 sudo apt install -y python3-pip clang-format shellcheck
 ```
+
+We recommend using `shellcheck>=v0.7.0`. Since this is not yet available in the default ubuntu apt repositories you can download it as follows:
+```sh
+wget -qO- "https://github.com/koalaman/shellcheck/releases/download/stable/shellcheck-stable.linux.x86_64.tar.xz" | tar -xJv
+sudo cp "shellcheck-stable/shellcheck" /usr/bin/
+rm shellcheck-stable
+```
+
 Next install the linter with
 ```sh
 pip3 install lg-linter
